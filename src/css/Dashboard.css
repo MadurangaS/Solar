@@ -1,0 +1,17 @@
+/* src/components/Dashboard.css */
+.dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 80px;
+    background: linear-gradient(135deg, #f0f0f0, #e0e0e0); /* Gradient background for the Dashboard area */
+  }
+  
+  .dashboard-section {
+    width: calc(25% - 2px); /* 4 sections with 2px gaps */
+    margin: 0 1px;
+    padding: 20px;
+    background-color: #fff; /* Background color for each section */
+  }
+  

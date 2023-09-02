@@ -1,0 +1,70 @@
+/* src/css/NavigationBar.css */
+.nav-bar {
+    background: linear-gradient(135deg, #00bfff, #33cc33);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Style for the App name */
+.app-header {
+    display: flex;
+    align-items: center; /* Vertical center alignment for icon and text */
+  }
+  
+  .app-icon {
+    width: 40px; /* Adjust the icon size as needed */
+    height: 40px; /* Adjust the icon size as needed */
+    margin-right: 10px; /* Add some space between icon and text */
+  }
+  
+  .app-header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    font-family: 'YourCustomFont', sans-serif; /* Replace 'YourCustomFont' with your desired font family */
+    background: linear-gradient(to right, #ffcc00, #ff0066); /* Replace colors with your desired gradient */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  .app-icon {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+  }
+  
+  nav {
+    display: flex;
+  }
+  
+  .nav-tab {
+    cursor: pointer;
+    margin: 2px;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .nav-tab.active {
+    background: linear-gradient(135deg, #33cc33, #00bfff);
+    color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Add hover effect */
+  .nav-tab:hover {
+    background: linear-gradient(135deg, #33cc33, #00bfff);
+    color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 2px; /* Reset margin to remove the gap on hover */
+  }
