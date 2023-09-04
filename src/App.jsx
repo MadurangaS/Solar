@@ -15,7 +15,7 @@ import Feedbacks from './pages/Feedbacks';
 
 
 const App = () => {
-  const companyFooter = "Your Company Name"; // Update the company name as needed
+  const companyFooter = "SUN SOLAR"; // Update the company name as needed
 
   return (
     <Router>
@@ -24,12 +24,12 @@ const App = () => {
           <NavigationBar />
         </div>
         <div className="content">
-          <Routes>
-            <Route path="/dashboard" component={Dashboard} />
-            <Route path="/products" component={Products} />
-            <Route path="/performances" component={Performances} />
-            <Route path="/customers" component={Customers} />
-            <Route path="/feedbacks" component={Feedbacks} />
+        <Routes>
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/products" element={<Products />} />
+            <Route path="/performances" element={<Performances />} />
+            <Route path="/customers" element={<Customers />} />
+            <Route path="/feedbacks" element={<Feedbacks />} />
           </Routes>
         </div>
         <div className="footer">{companyFooter}</div>
